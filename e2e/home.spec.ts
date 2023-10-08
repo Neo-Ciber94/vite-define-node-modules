@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('Has page content', async ({ page }) => {
 	await page.goto('/');
 
 	const text = await page.$eval('[data-page-content]', (x) => x.textContent);
